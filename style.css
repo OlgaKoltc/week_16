@@ -1,0 +1,32 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 50vh;
+}
+.form__titl {
+    text-align: center;
+    color: brown;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#btn {
+    color: brown;
+    height: 30px;
+    margin-top: 20px;
+}
+.form__specification {
+    margin: 20px 20px 20px 0;
+}
+#mileage {
+width: 200px;
+height: 20px;
+margin-top: 10px;
+}
+.none {
+    display: none;
+}
+.price {
+    color: blue;
+    margin: 20px auto;
+    font-size: 30px;
+}

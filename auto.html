@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>AutoCalc</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form"></div>
+      <div class="form__titl">Рассчитайте стоимость автомобиля</div>
+      <div class="form__table">
+        <select id="brand">
+          <option value="null">Марка автомобиля</option>
+          <option value="audi">Audi</option>
+          <option value="bmw">BMW</option>
+          <option value="kia">KIA</option>
+          <option value="opel">Opel</option>
+        </select>
+        <div class="form__none none">
+        <select class="audi none">
+          <option name="A1" value="2000000">A1</option>
+          <option name="A6" value="4000000">A6</option>
+          <option name="Q5" value="7000000">Q5</option>
+          <option name="TT" value="3000000">TT</option>
+        </select>
+        <select class="bmw none">
+          <option name="bmw" value="2000000">1-Series</option>
+          <option name="bmw" value="300000">X3</option>
+          <option name="bmw" value="5000000">X5</option>
+          <option name="bmw" value="6000000">X6</option>
+        </select>
+        <select class="kia none">
+          <option name="kia" value="800000">RIO</option>
+          <option name="kia" value="120000">Ceed</option>
+          <option name="kia" value="2000000">Optima</option>
+          <option name="kia" value="1000000">RIO-X</option>
+        </select>
+        <select class="opel none">
+          <option name="opel" value="1000000">Astra</option>
+          <option name="opel" value="1500000">Insignia</option>
+          <option name="opel" value="1700000">Mokka</option>
+          <option name="opel" value="1400000">Zafira</option>
+        </select>        
+      </div>
+        <div class="form__specification" id="specification">
+          Комплектация
+          <div>
+            <input type="checkbox" id="specification" value="15000" />Обогрев зеркал и лобового
+            стекла
+          </div>
+          <div>
+            <input type="checkbox" id="specification" value="10000" />Подушки безопасности передних
+            сидений
+          </div>
+          <div>
+            <input type="checkbox" id="specification" value="15000" />Подушки безопасности задних
+            сидений
+          </div>
+          <div><input type="checkbox" id="specification" value="10000" />Обогрев руля</div>
+          <div><input type="checkbox" id="specification" value="15000" />Парктроник</div>
+          <div><input type="checkbox" id="specification" value="25000" />Панорамная крыша</div>
+          <div><input type="checkbox" id="specification" value="30000" />Кожаный салон</div>
+        </div>
+        <div class="form__transmission" id="transmission">
+          <div class="form__subtitle">Коробка передач</div>
+          
+          <input name="transmission" type="radio" id="radio" value="150000">Автомат</input>
+          <input name="transmission" type="radio" id="radio" value="999">Механика</input>
+          <input name="transmission" type="radio" id="radio" value="90000">Вариатор</input>
+        </div>
+        </div>
+        <button id="btn">Рассчитать</button>
+        <div class="price"></div>
+      </div>
+    </div>
+    <script src="./auto.js"></script>
+  </body>
+</html>
